@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; }
+
+.blur-container,
+.blur-image,
+.circle-image {
+  width: 800px;
+  height: 600px; }
+
+.blur-container {
+  position: relative;
+  overflow: hidden; }
+
+.blur-image,
+.circle-image {
+  background: url("https://image.shutterstock.com/z/stock-photo-cute-chicks-111009566.jpg") center center;
+  background-size: cover;
+  transform: scale(1.03); }
+
+.circle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px; }
+
+.circle-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.blur-image {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5'); }
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 35%;
+  padding: 20px;
+  font-family: 'Tahoma', sans-serif;
+  color: #333; }
+
+h3,
+p {
+  margin: 5px 0px; }
